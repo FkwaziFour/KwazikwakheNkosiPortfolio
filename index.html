@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me | Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kwazikwakhe Nkosi | Portfolio</title>
     <style>
         :root {
             --bg: #0f172a;
@@ -12,78 +12,144 @@
             --accent: #38bdf8;
         }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
             background-color: var(--bg);
             color: var(--text);
-            line-height: 1.6;
             margin: 0;
-            padding: 20px;
-            display: flex;
-            justify-content: center;
+            padding: 0;
+            line-height: 1.6;
+            animation: fadeIn 1.2s ease-in-out;
         }
-        .container { max-width: 800px; width: 100%; }
-        header { text-align: center; padding: 40px 0; }
-        h1 { font-size: 2.5rem; margin-bottom: 10px; color: var(--accent); }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        header {
+            text-align: center;
+            padding: 40px 20px;
+        }
+        h1 {
+            font-size: 2.8rem;
+            color: var(--accent);
+            margin-bottom: 10px;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
         .section {
             background: var(--card);
             padding: 25px;
             border-radius: 12px;
             margin-bottom: 20px;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
         }
-        h2 { border-bottom: 2px solid var(--accent); padding-bottom: 8px; margin-top: 0; }
-        .skills-grid {
+        .section:hover { transform: translateY(-5px); }
+        h2 {
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 8px;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--accent);
+            margin-bottom: 15px;
+        }
+        .skills-grid, .projects-grid, .cert-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-            gap: 10px;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 12px;
             margin-top: 15px;
         }
-        .skill-tag {
+        .skill-tag, .project-card, .cert-card {
             background: #334155;
-            padding: 5px 12px;
-            border-radius: 20px;
+            padding: 12px;
+            border-radius: 10px;
             text-align: center;
-            font-size: 0.9rem;
         }
-        .links a {
+        .project-card a, .links a {
             color: var(--accent);
             text-decoration: none;
-            margin-right: 15px;
             font-weight: bold;
         }
         .links a:hover { text-decoration: underline; }
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+            .container { padding: 10px; }
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>[Your Name]</h1>
-            <p>Software Developer | Tech Enthusiast | Problem Solver</p>
-        </header>
+    <header>
+        <img src="profile.jpg" alt="Profile Image" class="profile-img" />
+        <h1>Kwazikwakhe Nkosi</h1>
+        <p>Data Analyst Intern | TUT 4IR Research Lab</p>
+    </header>
 
+    <div class="container">
         <section class="section">
             <h2>👤 About Me</h2>
-            <p>Hello! I'm a developer passionate about building clean, functional, and user-friendly applications. I love turning complex problems into simple, beautiful code.</p>
+            <p>
+                I am a Data Analyst Intern at the TUT 4IR Research Lab with strong analytical,
+                programming, and visualization skills. I hold a Diploma in Informatics from the
+                Tshwane University of Technology and have experience in IT project management,
+                systems analysis, database management, and software testing.
+            </p>
         </section>
 
         <section class="section">
-            <h2>🚀 My Tech Stack</h2>
+            <h2>🚀 Tech Stack</h2>
             <div class="skills-grid">
-                <div class="skill-tag">JavaScript</div>
+                <div class="skill-tag">Java</div>
+                <div class="skill-tag">SAS Base</div>
+                <div class="skill-tag">R</div>
                 <div class="skill-tag">Python</div>
-                <div class="skill-tag">React</div>
-                <div class="skill-tag">Node.js</div>
-                <div class="skill-tag">Git</div>
                 <div class="skill-tag">SQL</div>
+                <div class="skill-tag">Power BI</div>
+                <div class="skill-tag">Tableau</div>
+                <div class="skill-tag">Excel</div>
+                <div class="skill-tag">Project Management</div>
+                <div class="skill-tag">Business Analysis</div>
+                <div class="skill-tag">Database Admin</div>
+                <div class="skill-tag">System Analysis</div>
+                <div class="skill-tag">System Testing</div>
             </div>
         </section>
 
         <section class="section">
-            <h2>🔗 Let's Connect</h2>
+            <h2>📘 Certifications</h2>
+            <div class="cert-grid">
+                <div class="cert-card">(Add Certification)</div>
+                <div class="cert-card">(Add Certification)</div>
+                <div class="cert-card">(Add Certification)</div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>📂 Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Student Analytics</h3>
+                    <p>Data-driven insights on student performance and trends.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Food Price Trends</h3>
+                    <p>Analysis of food pricing across countries over time.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>🔗 Contact & Socials</h2>
             <div class="links">
-                <a href="https://github.com/[your-username]">GitHub</a>
-                <a href="https://linkedin.com/in/[your-profile]">LinkedIn</a>
-                <a href="mailto:your.email@example.com">Email</a>
+                <p>📞 064 939 7530</p>
+                <p>📧 <a href="mailto:kwazin56@gmail.com">kwazin56@gmail.com</a></p>
+                <p>🔗 <a href="https://www.linkedin.com/in/kwazikwakhe-nkosi-3b83a9262/">LinkedIn</a></p>
+                <p>💻 <a href="https://github.com/FkwaziFour">GitHub</a></p>
             </div>
         </section>
     </div>
