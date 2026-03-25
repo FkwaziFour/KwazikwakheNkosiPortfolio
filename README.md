@@ -23,29 +23,59 @@ System and business analysis
 Database management
 IT project management
 ### 🚀 Tech Stack
+
 Programming
+
 Java
+
 Python
+
 SQL
+
 SAS Base
+
 R
+
 ### Data Visualization
+
 Power BI
+
 Tableau
+
 Excel
+
 ### IT/Business Skills
+
 Project Management
+
 Business Analysis
+
 System Analysis
+
 Database Administration
+
 System Testing
-###📂 Projects Featured in the Portfolio
+
+### 📂 Projects Featured in the Portfolio
+
 1️⃣ Student Analytics
 
 A data-driven project analyzing student performance trends, demographic patterns, and academic metrics for decision-making.
 
+
 2️⃣ Food Price Trends
+
 
 An analytical dashboard and dataset exploration comparing food prices across multiple countries and years.
 
 ### 📜 Certifications
+
+### 📞 Contact Me
+
+Phone: 064 939 7530
+
+Email: kwazin56@gmail.com
+
+LinkedIn: https://www.linkedin.com/in/kwazikwakhe-nkosi-3b83a9262/
+
+GitHub: https://github.com/FkwaziFour
